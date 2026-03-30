@@ -65,6 +65,7 @@ def manual_load_env_file(env_path: Path):
             loaded = True
     return loaded
 
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 ENV_PATHS_CHECKED = [
     BASE_DIR / ".env",
